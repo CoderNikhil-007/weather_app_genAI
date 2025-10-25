@@ -41,5 +41,5 @@ class BaseAgent:
         self.agent = AssistantAgent(name=self.name, llm_config=llm_config)
 
     def generate(self, prompt : str) ->str:
-
+        #Common function to generate output
         return self.user_agent.initiate_chat(self.agent, message=prompt)
